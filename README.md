@@ -1,7 +1,7 @@
 # print-mongoDb-schema
 Query to print list of mongo db corrections with available fields and value examples
 
-//print collection details: field name, type and value
+```//print collection details: field name, type and value
 function printSchema(collection, indent, collectionName) {
     for (var key in collection) {
         if (typeof collection[key] != "function" && typeof collection[key] != "object") {
@@ -61,4 +61,4 @@ for (i = 0; i < allCollectionNames.length; i++) {
         print("");
         print("");
     }
-}
+}```
